@@ -45,20 +45,32 @@ Console.WriteLine("Hello, World!");
 
 //SNACK 3 
 
-int somma = 0;
+//int somma = 0;
 
-for (int i = 0; i < 10; i++)
+//for (int i = 0; i < 10; i++)
+//{
+//    Console.WriteLine($"Inserisci il numero {i + 1}");
+//    if (int.TryParse( Console.ReadLine(), out int numero ) )
+//    {
+//        somma += numero;
+//    }
+//    else
+//    {
+//        Console.WriteLine("Carattere sconosciuto. Inserisci un numero.");
+//        i--;
+//    }
+//}
+//Console.WriteLine($"La somma di tutti i numeri inseriti è: {somma}");
+
+//SNACK 4 
+
+int somma = 0;
+for (int numero = 2; numero <= 10; numero++)
 {
-    Console.WriteLine($"Inserisci il numero {i + 1}");
-    if (int.TryParse( Console.ReadLine(), out int numero ) )
-    {
-        somma += numero;
-    }
-    else
-    {
-        Console.WriteLine("Carattere sconosciuto. Inserisci un numero.");
-        i--;
-    }
+    somma += numero; 
 }
-Console.WriteLine($"La somma di tutti i numeri inseriti è: {somma}");
+
+float media = (float)somma / 9;
+Console.WriteLine($"La somma dei numeri da 2 a 10 è: {somma}");
+Console.WriteLine($"La media dei numeri da 2 a 10 è: {media}");
 
