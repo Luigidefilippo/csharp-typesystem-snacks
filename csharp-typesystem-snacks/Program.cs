@@ -76,16 +76,41 @@ Console.WriteLine("Hello, World!");
 
 
 //SNACK 5 
-Console.WriteLine("Inserisci un numero");
-if (int.TryParse(Console.ReadLine(), out int numero))
+//Console.WriteLine("Inserisci un numero");
+//if (int.TryParse(Console.ReadLine(), out int numero))
+//{
+//    if (numero % 2 == 0)
+//    {
+//        Console.WriteLine($"Il numero {numero} è pari ");
+//    }
+//    else {
+//        Console.WriteLine($"Il numero {numero} è dispari , il successivo è {numero + 1}  ");
+//            }
+//}
+
+//SNACK 6 
+
+string[] invitati = { "Jay Gatsby", "Daisy Buchanan", "Tom Buchanan", "Jordan Baker", "Myrtle Wilson", "George Wilson" };
+Console.WriteLine("Qual'è il vostro nome Sir : ");
+string nomeInvitato = Console.ReadLine();
+
+bool invitato = false;
+
+foreach (string nome in invitati)
 {
-    if (numero % 2 == 0)
+    if (nome.Equals(nomeInvitato , StringComparison.OrdinalIgnoreCase))
     {
-        Console.WriteLine($"Il numero {numero} è pari ");
+        invitato = true;
+        break;
     }
-    else {
-        Console.WriteLine($"Il numero {numero} è dispari , il successivo è {numero + 1}  ");
-            }
+}
+if (invitato)
+{
+    Console.WriteLine($"Benvenuto , {nomeInvitato}! Siamo lieti di accoglierla ");
+}
+else
+{
+    Console.WriteLine($"Mi dispiace , {nomeInvitato} , non è sulla lista degli invitati "); 
 }
 
 
