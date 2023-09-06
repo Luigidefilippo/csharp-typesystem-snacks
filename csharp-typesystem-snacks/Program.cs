@@ -145,10 +145,73 @@ Console.WriteLine("Hello, World!");
 
 //SNAKC 8 
 
-int[] numeri = {1,2,3,4,5,6,7,8,9,10};
-int somma = 0;
-for (int i = 0; i < numeri.Length; i += 2 )
+//int[] numeri = {1,2,3,4,5,6,7,8,9,10};
+//int somma = 0;
+//for (int i = 0; i < numeri.Length; i += 2 )
+//{
+//    somma += numeri[i];
+//}
+//Console.WriteLine($"òa somma degli elementi in posizione dispari è : {somma}");
+
+
+//SNACK 9 
+//int[] numeri = new int[0];
+//int somma = 0;
+
+//while( somma < 50)
+//{
+//    Console.WriteLine("Inserisci un numero: ");
+//    if(int.TryParse(Console.ReadLine(), out int numero ))
+//    {
+//        int[] nuovoArray = new int[numeri.Length + 1 ];
+//        for( int i = 0; i < numeri.Length; i++ )
+//        {
+//            nuovoArray[i] = numeri[i];
+//        }
+//        nuovoArray[numeri.Length] = numero;
+
+//        numeri = nuovoArray;
+
+//        somma += numero ;
+//    }
+//    else
+//    {
+//        Console.WriteLine("Valore inserito non valido. Inserito un valore corretto ");
+//    }
+//}
+//Console.WriteLine("Somma degli elementi nell'array supera il valore 50 ");
+//Console.WriteLine("Numeri inseriti nell'array ");
+
+//foreach( int n in numeri )
+//{
+//    Console.WriteLine(n);
+//}
+
+//SNAKC 10 
+
+Console.WriteLine("Inserisci un numero (N):");
+if ( int.TryParse(Console.ReadLine(), out int N ) && N > 0 )
 {
-    somma += numeri[i];
+    Random random = new Random();  
+    for( int i = 0; i < N; i++ )
+    {
+        int[] arrayCasuale = new int[10];
+        Console.WriteLine($"Array {i + 1}:");
+
+        for (int j = 0; j < arrayCasuale.Length; j++ )
+        {
+            arrayCasuale[j] = random.Next(1 ,101 );
+            Console.WriteLine($"{arrayCasuale[j]}");
+
+            if ((j + 1 ) % 5 == 0 )
+            {
+                Console.WriteLine();
+            }
+        }
+        Console.WriteLine();
+    }
 }
-Console.WriteLine($"òa somma degli elementi in posizione dispari è : {somma}");
+else
+{
+    Console.WriteLine("Inserisci un numero maggiore di 0. ");
+}
