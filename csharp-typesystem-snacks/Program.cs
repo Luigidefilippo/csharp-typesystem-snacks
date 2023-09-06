@@ -143,3 +143,12 @@ Console.WriteLine("Hello, World!");
 //    Console.WriteLine(numeriDispari[i]);
 //}
 
+//SNAKC 8 
+
+int[] numeri = {1,2,3,4,5,6,7,8,9,10};
+int somma = 0;
+for (int i = 0; i < numeri.Length; i += 2 )
+{
+    somma += numeri[i];
+}
+Console.WriteLine($"òa somma degli elementi in posizione dispari è : {somma}");
