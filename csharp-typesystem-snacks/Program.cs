@@ -64,13 +64,28 @@ Console.WriteLine("Hello, World!");
 
 //SNACK 4 
 
-int somma = 0;
-for (int numero = 2; numero <= 10; numero++)
+//int somma = 0;
+//for (int numero = 2; numero <= 10; numero++)
+//{
+//    somma += numero; 
+//}
+
+//float media = (float)somma / 9;
+//Console.WriteLine($"La somma dei numeri da 2 a 10 è: {somma}");
+//Console.WriteLine($"La media dei numeri da 2 a 10 è: {media}");
+
+
+//SNACK 5 
+Console.WriteLine("Inserisci un numero");
+if (int.TryParse(Console.ReadLine(), out int numero))
 {
-    somma += numero; 
+    if (numero % 2 == 0)
+    {
+        Console.WriteLine($"Il numero {numero} è pari ");
+    }
+    else {
+        Console.WriteLine($"Il numero {numero} è dispari , il successivo è {numero + 1}  ");
+            }
 }
 
-float media = (float)somma / 9;
-Console.WriteLine($"La somma dei numeri da 2 a 10 è: {somma}");
-Console.WriteLine($"La media dei numeri da 2 a 10 è: {media}");
 
