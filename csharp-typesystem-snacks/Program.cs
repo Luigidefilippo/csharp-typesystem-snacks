@@ -90,27 +90,56 @@ Console.WriteLine("Hello, World!");
 
 //SNACK 6 
 
-string[] invitati = { "Jay Gatsby", "Daisy Buchanan", "Tom Buchanan", "Jordan Baker", "Myrtle Wilson", "George Wilson" };
-Console.WriteLine("Qual'è il vostro nome Sir : ");
-string nomeInvitato = Console.ReadLine();
+//string[] invitati = { "Jay Gatsby", "Daisy Buchanan", "Tom Buchanan", "Jordan Baker", "Myrtle Wilson", "George Wilson" };
+//Console.WriteLine("Qual'è il vostro nome Sir : ");
+//string nomeInvitato = Console.ReadLine();
 
-bool invitato = false;
+//bool invitato = false;
 
-foreach (string nome in invitati)
-{
-    if (nome.Equals(nomeInvitato , StringComparison.OrdinalIgnoreCase))
-    {
-        invitato = true;
-        break;
-    }
-}
-if (invitato)
-{
-    Console.WriteLine($"Benvenuto , {nomeInvitato}! Siamo lieti di accoglierla ");
-}
-else
-{
-    Console.WriteLine($"Mi dispiace , {nomeInvitato} , non è sulla lista degli invitati "); 
-}
+//foreach (string nome in invitati)
+//{
+//    if (nome.Equals(nomeInvitato , StringComparison.OrdinalIgnoreCase))
+//    {
+//        invitato = true;
+//        break;
+//    }
+//}
+//if (invitato)
+//{
+//    Console.WriteLine($"Benvenuto , {nomeInvitato}! Siamo lieti di accoglierla ");
+//}
+//else
+//{
+//    Console.WriteLine($"Mi dispiace , {nomeInvitato} , non è sulla lista degli invitati "); 
+//}
 
+
+//SNACK 7 
+
+//int[] numeriDispari = new int[6];
+//int contatore = 0;
+
+//for (int i = 0; i < 6; i++)
+//{
+//    Console.WriteLine($"Inserisci il primo numero: {i + 1}");
+//    if (int.TryParse(Console.ReadLine(), out int numero) )
+//    {
+//        if (numero % 2 != 0)
+//        {
+//            numeriDispari[contatore] = numero;
+//            contatore++;
+//        }
+//    }
+//    else
+//    {
+//        Console.WriteLine("Valore inserito non valido inserisci correttamente un numero ");
+//        i--;
+//    }
+//}
+
+//Console.WriteLine("Numeri dispari inseriti:");
+//for (int i = 0; i < contatore ;i++)
+//{
+//    Console.WriteLine(numeriDispari[i]);
+//}
 
